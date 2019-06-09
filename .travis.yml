@@ -9,7 +9,7 @@ script:
   - docker run -e CI=true kmysore/docker-react npm run test -- --watchAll=false
 
 deploy:
-  provider: elastibeanstalk
+  provider: elasticbeanstalk
   region: "eu-west-1"
   app: "docker-react"
   env: "DockerReact-env"
